@@ -1,0 +1,32 @@
+
+  
+  #sep {
+    overflow: hidden;
+    text-align: center;
+    color:#fff;
+    font-size: 1.3rem;
+    z-index:20;
+  }
+  
+  #sep:before,
+  #sep:after {
+    background-color: #fff;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 40%;
+  }
+  
+  #sep:before {
+    right: 0.5em;
+    margin-left: -50%;
+    margin-bottom:-9px;
+  }
+  
+  #sep:after {
+    left: 0.5em;
+    margin-right: -50%;
+    margin-bottom:-9px;
+  }

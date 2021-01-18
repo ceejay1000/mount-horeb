@@ -1,0 +1,241 @@
+.header-container {
+  /* height: 50%; */
+  width: 100%;
+  /* padding: 60px auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.header-bg {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  background-position: top left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header-welcome {
+  width: 80%;
+  padding-top: 5%;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 539px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-welcome h2 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 79px;
+  letter-spacing: 1px;
+}
+
+.header-buttons {
+  font-family: "Open Sans";
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+}
+
+.header-button-container {
+  width: 400px;
+  margin: 60px 35px;
+}
+
+.header-button {
+  background: transparent;
+  cursor: pointer;
+  font-size: 23px;
+  color: #fff;
+  width: 350px;
+  height: 70px;
+  border: 0.2px solid #fff;
+  border-radius: 3px;
+  padding: 20px;
+}
+
+.header-button:active,
+.header-button:focus,
+.sermon-button:focus,
+.sermon-button:active {
+  outline: none;
+}
+
+.header-button:hover {
+  background: #5f6cfa;
+  border: 1.9px solid #fff;
+  transition: all 0.7s ease-in-out;
+}
+
+/* Latest Sermon  */
+.latest-sermon-container {
+  width: 100%;
+  height: 180px;
+  margin-top: -28px;
+  background: #5965e7;
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  justify-content: space-between;
+  z-index: 1;
+  position: relative;
+}
+.sermon-description {
+  width: 750px;
+  z-index: 3;
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: left;
+}
+.sermon-bg {
+  position: absolute;
+  /* margin: 0;
+  padding: 0; */
+  width: 100vw;
+  height: 100%;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.sermon-button {
+  font-family: "Open Sans";
+  margin-right: 10px;
+  background: #000;
+  cursor: pointer;
+  font-size: 23px;
+  z-index: 3;
+  color: #5f6cfa;
+  width: 350px;
+  height: 70px;
+  border: none;
+  border-radius: 3px;
+  padding: 20px;
+}
+span .bell {
+  transform: rotate(-20deg);
+  padding-top: 5px;
+  font-size: 25px;
+  z-index: 10;
+}
+
+.sermon-button:hover {
+  background: #fff;
+  transition: background 0.5s ease;
+}
+
+/* CSS Media queries begins here */
+
+/* // Media queries for tablet landscapes */
+@media only screen and (max-width: 1438px) {
+  .header-button {
+    font-size: 23px;
+    padding: 20px 15px;
+    margin: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .header-button {
+    font-size: 23px;
+    width: 300px;
+    border: 0.2px solid #fff;
+    border-radius: 3px;
+    padding: 20px 15px;
+  }
+}
+
+/* // Media queries for tablet landscapes */
+@media only screen and (max-width: 1140px) {
+  .header-button {
+    font-size: 20px;
+  }
+}
+
+/* // Media queries for tablet landscapes */
+@media only screen and (max-width: 1060px) {
+  .header-button {
+    font-size: 23px;
+    width: 250px;
+    border: 0.2px solid #fff;
+    border-radius: 3px;
+    padding: 20px 15px;
+  }
+}
+
+/* // Media queries for tablet portrait */
+@media only screen and (max-width: 990px) {
+  .header-title {
+    font-size: 20px;
+  }
+
+  .header-button {
+    font-weight: 600;
+    font-size: 17px;
+    width: 220px;
+    padding: 15px 10px;
+    letter-spacing: 1px;
+    line-height: 1.1;
+  }
+}
+
+/* // Media queries for tablet portrait */
+@media only screen and (max-width: 900px) {
+  .header-button {
+    font-size: 18px;
+    width: 220px;
+    border: 0.2px solid #fff;
+    border-radius: 3px;
+    padding: 20px 15px;
+  }
+
+  h2.header-title {
+    margin: 0px;
+    line-height: 1.2;
+    font-size: 2.8rem;
+  }
+}
+
+/* // Media queries for tablet portrait */
+@media only screen and (max-width: 800px) {
+  .header-buttons {
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-buttons button {
+    display: block;
+  }
+
+  h2.header-title {
+    margin: 0px;
+    font-size: 2.6rem;
+  }
+
+  .header-button-container {
+    width: 100%;
+    background: blue;
+    display: block;
+  }
+
+  .header-button {
+    font-size: 18px;
+    width: 220px;
+    border: 0.2px solid #fff;
+    border-radius: 3px;
+    padding: 10px 10px;
+  }
+}

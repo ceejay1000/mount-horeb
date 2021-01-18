@@ -1,0 +1,60 @@
+.paragraph-text {
+  font-family: "Open Sans", sans-serif;
+  text-align: justify;
+  margin: 14px 0;
+  font-size: 20px;
+  line-height: 1.65em;
+  color: #9c9c9c;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  line-height: 1.5;
+  color: #222;
+  font-weight: 540;
+  margin-top: 25px;
+  font-size: 1.9rem;
+}
+.speech-container {
+  padding: 90px 50px;
+  display: flex;
+  margin: 20px;
+  flex-direction: column;
+}
+.interimImage {
+  margin-top: -10px;
+  margin-right: 20px;
+}
+
+/* // Media queries for tablet landscapes */
+@media only screen and (max-width: 1200px) {
+  .speech-title {
+    font-size: 1.7rem;
+  }
+}
+
+/* // Media queries for tablet landscapes */
+@media only screen and (max-width: 1095px) {
+  .speech-title {
+    font-size: 1.6rem;
+  }
+}
+
+/* // Media queries for tablet landscapes */
+@media only screen and (max-width: 900px) {
+  .speech-title {
+    font-size: 1.4rem;
+  }
+
+  .paragraph-text {
+    font-size: 16px;
+  }
+}
+
+/* // Media queries for tablet landscapes */
+@media only screen and (max-width: 600px) {
+  .speech-title {
+    font-size: 1rem;
+  }
+}

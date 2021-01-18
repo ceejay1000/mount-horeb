@@ -1,0 +1,130 @@
+.what-next-container {
+  min-height: 70vh;
+  padding: 100px 50px;
+  display: flex;
+  flex-direction: column;
+  background: #e8e8e8;
+}
+
+.what-next-heading {
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  line-height: 1.1;
+  color: #222;
+  font-weight: 500;
+  font-size: 2rem;
+  /* margin-top: -20px; */
+}
+
+.what-next-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.what-next-button-container {
+  width: 28.3%;
+  margin: 20px 25px;
+}
+
+.what-next-button {
+  background: transparent;
+  cursor: pointer;
+  font-size: 21.3px;
+  font-weight: 400;
+  font-family: "Open Sans";
+  color: #444;
+  width: 325px;
+  /* height: 65px; */
+  border: 2px solid #5f6cfa;
+  padding: 15px;
+  display: inline-block;
+}
+
+.what-next-button:active,
+.what-next-button:focus,
+.sermon-button:focus,
+.sermon-button:active {
+  outline: none;
+}
+
+.what-next-button:hover {
+  background: #5f6cfa;
+  /* color: #444; */
+  transition: all 0.4s ease-in-out;
+}
+
+/* // Media queries for tablet landscapes */
+@media only screen and (max-width: 1065px) {
+  .what-next-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .what-next-button-container {
+    margin: 15px 20px;
+  }
+
+  .what-next-button {
+    font-size: 18.3px;
+    font-weight: 400;
+    color: #444;
+    width: 300px;
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  .what-next-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .what-next-button-container {
+    margin: 15px 0;
+  }
+
+  .what-next-button {
+    font-size: 18.3px;
+    font-weight: 400;
+    color: #444;
+    width: 300px;
+    padding: 10px;
+  }
+}
+
+.interimImage {
+  margin: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .what-next-button {
+    font-size: 20.3px;
+    font-weight: 400;
+    color: #444;
+    width: 300px;
+    padding: 12px;
+  }
+
+  .what-next-container {
+    padding: 80px 30px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+  }
+
+  .what-next-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .what-next-button:not(:last-of-type) {
+    margin-bottom: 25px;
+  }
+}
